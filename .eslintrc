@@ -1,0 +1,17 @@
+{
+  "extends": [
+    'react'
+  ],
+  "globals": {
+    "describe": true,
+    "it": true,
+    "true": true
+  },
+  "rules": {
+    "no-underscore-dangle": 0,
+    "max-len": 0,
+    "no-undef": 0,
+    "react/prop-types": 1,
+    "max-nested-callbacks": 1
+  }
+}
