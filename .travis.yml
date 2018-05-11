@@ -12,7 +12,11 @@ script:
   - npm test -- --coverage
 
 after_script:
-  - echo $coveralls_repo_token
   - COVERALLS_REPO_TOKEN=$coveralls_repo_token npm run coveralls
   - npm run lint
+
+deploy:
+  provider: heroku
+  api_key: $heroku_api_key
+  on: master
 
